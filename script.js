@@ -10,7 +10,7 @@ $(document).ready(function (){
 
         if(item) {
             $('#list-items')
-                .append('<li><input class="checkbox" type="checkbox" />' + item + '<a class="remove">x</a><hr></li>');
+                .append('<li><input class="checkbox" type="checkbox" />' + item + '<a class="remove"><i class="fa fa-trash" aria-hidden="true"></i></a><hr></li>');
         
             localStorage.setItem('listItems', $('#list-items').html());
 
